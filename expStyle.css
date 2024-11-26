@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(246, 246, 231);
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline
+}
+
+h3{
+    margin-left: 10px;
+    font-size: 20px;
+    margin-bottom: -8px;
+}
+
+ul{
+    list-style: none;
+    font-size: 18px;
+}
