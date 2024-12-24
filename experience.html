@@ -1,46 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link href="expStyle.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <link href="style.css" rel="stylesheet">
     <title>Experience</title>
+    <script src="logic.js" defer></script>
 </head>
-<body>
-    <h1>Experience Details</h1>
-    <div>
-        <div class="Senior-SE">
-            <h2>Infosys Ltd.</h2>
-            <h3>Senior Systems Engineer (Full time)</h3>
-            <ul>    
-                <li>Project: Telstra (Australian Telecommunications Client)</li>
-                <li>Dates: Oct 2022 - Dec 2022</li>
-            </ul>           
-                <ul>
-                    <li><strong>Issue Resolution & Coordination: </strong>Acted as a key liaison between the client and technical teams. Managed client-reported issues using project-specific tools, ensuring accurate reference ID tracking for effective resolution.</li>
-                    <li><strong>Service Order Analysis: </strong>Reviewed and analyzed service requests to identify discrepancies, providing actionable feedback and streamlining processes.</li>
-                    <li><strong>Team Collaboration: </strong>Collaborated with cross-functional teams to address complex client challenges, ensuring timely and efficient solutions aligned with service level agreements.</li>
-                </ul>
-        </div>
 
-        <div class="SE">
-            <h3>Systems Engineer (Full time)</h3>
-            <ul>    
-                <li>Project: Telstra (Australian Telecommunications Client)</li>
-                <li>Dates: Aug 2020 - Oct 2022</li>
-            </ul>           
-                <ul>
-                    <li><strong>Problem-Solving Expertise: </strong>Developed efficient solutions for challenging technical problems by leveraging Python, SQL, and Java expertise.</li>
-                    <li><strong>Tool Integration & Analysis: </strong>Cross-referenced and analyzed data using various tools to ensure accuracy and resolve client issues.</li>
-                    <li><strong>Team Collaboration: </strong>Collaborated with cross-functional teams to address complex client challenges, ensuring timely and efficient solutions aligned with service level agreements.</li>
-                    <li><strong>Collaboration & Communication: </strong>Worked with multiple teams to ensure seamless issue resolution and improved service delivery.</li>
-                    <br><li><strong>Pre-Project Training (Aug 2020 - Oct 2020): </strong>Successfully completed Infosys' rigorous training in Python and Java, achieving a 90% proficiency score. Gained strong skills in problem-solving, algorithm design, and application development.</li>
-                    <br>
-                    <li style="text-align: center;"><strong>**Impact: </strong>Recognized for exceptional performance, leadership, and operational excellence with a promotion to <strong>Senior Systems Engineer.</strong></li>
+<body id="body" class="light-mode"> 
 
-                </ul>
+    <div id="nav-placeholder"></div>
+
+    <div class="container">
+        <h2><i class="fas fa-briefcase me-2"></i>Work Experience</h2>
+        <div class="row timeline">
+
+            <div class="timeline-item">
+                <span class="timeline-circle"></span>
+                <div class="d-flex justify-content-start align-items-start">
+                    <div class="card shadow main-card" id="card1">
+                        <div class="card-body">
+                            <h3 class="card-title">Senior Systems Engineer (Full Time) @Infosys</h3>
+                            <h5 class="card-subtitle mb-2 text-muted"><b>Role Duration:</b> Aug 2022 to Dec 2022</h5>
+                            <h5><b>Project:</b> Telstra (Australian Telecommunications Client)</h5>
+                            <p class="card-text">Optimized service operations using advanced tools and mentored new joiners.</p>
+                            <button class="btn btn-secondary btn-lg w-50" onclick="showDetails('details1', 'card1')">More Details</button>
+                        </div>
+                    </div>
+    
+                    <div class="details-block" id="details1">
+                        <div class="card shadow-lg bg-light">
+                            <div class="card-body">
+                                <h4><b>DETAILS:</b></h4>
+                                <p><b>Advanced Tool Utilization:</b> Gained in-depth expertise in tools like <b>Maxim, CNSDI, RASS, Flexcab</b>, and <b>Magpie</b>, streamlining client request handling and service delivery.</p>
+                                <p><b>Training & Leadership:</b> Mentored and trained <b>new joiners</b> on the project, providing hands-on guidance on tools and processes to ensure operational efficiency.</p>
+                                <ul><b>Awards & Recognition: </b>
+                                    <li><b>Applause Award</b> for commitment to deliverables and adhering to tight deadlines in Development Operations.</li>
+                                    <li><b>“Above and Beyond”, “Rising Star”</b>, and <b>“Keep up the Good Work”</b> awards for consistently exceeding expectations in client servicing and teamwork.</li>
+                                </ul>
+                                <p><b>Process Optimization:</b> Enhanced service processing workflows by identifying bottlenecks and suggesting improvements to ensure timely delivery.</p>
+                                <p><b>Team Collaboration:</b> Worked closely with cross-functional teams, ensuring smooth communication and faster resolution of customer requests.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <span class="timeline-circle"></span>
+                <div class="d-flex justify-content-start align-items-start">
+                    <div class="card shadow main-card" id="card2" data-aos="fade-right" data-aos-delay="600">
+                        <div class="card-body">
+                            <h3 class="card-title">Systems Engineer (Full Time) @Infosys</h3>
+                            <h5 class="card-subtitle mb-2 text-muted"><b>Role Duration:</b> Oct 2020 to Jul 2022</h5>
+                            <h5><b>Project:</b> Telstra (Australian Telecommunications Client)</h5>
+                            <p class="card-text">Managed client requests and ensured seamless service operations.</p>
+                            <button class="btn btn-secondary btn-lg w-50" onclick="showDetails('details2','card2')">More Details</button>
+                        </div>
+                    </div>
+                    <div class="details-block" id="details2">
+                        <div class="card shadow-lg bg-light">
+                            <div class="card-body">
+                                <h4><b>DETAILS:</b> (Promoted to Senior Systems Engineer)</h4>
+                                <p><b>Client Request Handling:</b> Managed Request IDs from customers and clients using tools like <b>Maxim, CNSDI, RASS, Flexcab</b>, and <b>Magpie</b>. 
+                                    Verified customer details and ensured the <b>authenticity</b> of requests before processing.</p>
+                                <p><b>Service Operations:</b> Created, deleted, and modified customer services based on validated requests, ensuring compliance with client-specific guidelines and protocols.</p>
+                                <p><b>Collaboration & Communication:</b> Directed validated requests to the appropriate teams for further processing, ensuring seamless communication across functional teams.
+                                <p><b>Skill Development:</b> Strengthened expertise in <b>Python, SQL,</b> and customer operations, contributing to the successful execution of large-scale processes.</p>
+                                <p><b>Awards & Recognition:</b> Received the <b>Best Rookie of the Quarter Award</b> for exceptional dedication and performance during the initial tenure.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <span class="timeline-circle"></span>
+                <div class="d-flex justify-content-start align-items-start">
+                    <div class="card shadow main-card" id="card3" data-aos="fade-right" data-aos-delay="600">
+                        <div class="card-body">
+                            <h3 class="card-title">Graduate Engineer Trainee (Infosys)</h3>
+                            <h5 class="card-subtitle mb-2 text-muted"><b>Role Duration:</b> Aug 2020 to Oct 2020</h5>
+                            <p class="card-text"><b>Focus Areas:</b> Python OOP, Networking Basics, MySQL.</p>
+                            <button class="btn btn-secondary btn-lg w-50" onclick="showDetails('details3','card3')">More Details</button>
+                        </div>
+                    </div>
+                    <div class="details-block" id="details3">
+                        <div class="card shadow-lg bg-light">
+                            <div class="card-body">
+                                <h4><b>DETAILS:</b></h4>
+                                <p>Successfully completed a rigorous training program focused on <b>Python (Object-Oriented Programming), Networking Basics</b>, and <b>MySQL</b>, achieving a <b>90% score in the final assessment</b>.</p>
+                                <p>Gained hands-on experience in <b>database management</b> using MySQL, including query optimization, database design, and data manipulation.</p>
+                                <p>Developed foundational expertise in <b>problem-solving, algorithm design</b>, and <b>application development</b>, equipping me with strong technical skills for future roles.</p>
+                                <p>Acquired the ability to apply technical knowledge to real-world scenarios, preparing for high-impact client projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <span class="timeline-circle"></span>
+                <div class="d-flex justify-content-start align-items-start">
+                    <div class="card shadow main-card" id="card4" data-aos="fade-right" data-aos-delay="1200">
+                        <div class="card-body">
+                            <h3 class="card-title">Production Manager (Full Time)  @ACC Limited</h3>
+                            <h5 class="card-subtitle mb-2 text-muted"><b>Role Duration:</b> Feb 2019 to Feb 2020</h5>
+                            <p class="card-text"><b>Focus Areas:</b>Team work, quality analysis, team management.</p>
+                            <button class="btn btn-secondary btn-lg w-50" onclick="showDetails('details4','card4')">More Details</button>
+                        </div>
+                    </div>
+                    <div class="details-block" id="details4">
+                        <div class="card shadow-lg bg-light">
+                            <div class="card-body">
+                                <h4><b>DETAILS:</b></h4>
+                                <p><b>Inventory Management:</b> Efficiently managed and optimized inventory levels of raw materials, ensuring seamless production operations while reducing wastage. 
+                                    Applied data-driven decision-making to forecast inventory needs and align with production schedules.</p>
+                                <p><b>Quality Control:</b> Established and monitored quality assurance processes to ensure compliance with industry standards and customer requirements. 
+                                    Conducted root cause analysis for defects and implemented corrective actions, showcasing problem-solving and analytical skills.</p>
+                                <p><b>Team Collaboration and Leadership:</b> Led cross-functional teams to achieve production goals within deadlines. 
+                                    Fostered teamwork and a collaborative work environment to improve efficiency and achieve operational excellence.</p>
+                                <p><b>Production Control:</b> Streamlined production workflows for ready-mix concrete by leveraging real-time monitoring and process optimization techniques. 
+                                    Ensured that production milestones were met by addressing bottlenecks and resource constraints effectively.</p>
+                                <p><b>Process Optimization:</b> Identified and implemented process improvements, increasing production efficiency and reducing operational costs. 
+                                    Utilized data analytics to track key performance indicators (KPIs) and improve overall productivity.</p>
+                                <p><b>Technology Adoption:</b> Worked with automated production systems and tools to enhance accuracy and efficiency. 
+                                    Leveraged software for production scheduling, inventory tracking, and quality control reporting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="timeline-item right">
+                <span class="timeline-circle"></span>
+                <div class="d-flex justify-content-start align-items-start">
+                    <div class="card shadow main-card" id="card5" data-aos="fade-right" data-aos-delay="1800">
+                        <div class="card-body">
+                            <h3 class="card-title">Facility Management Specialist (Internship) @Reliance Industries Limited</h3>
+                            <h5 class="card-subtitle mb-2 text-muted"><b>Role Duration:</b> Aug 2018 to Oct 2018</h5>
+                            <p class="card-text">Facility Management Specialist Intern with experience in store sourcing and HVAC systems.</p>
+                            <button class="btn btn-secondary btn-lg w-50" onclick="showDetails('details5','card5')">More Details</button>
+                        </div>
+                    </div>
+
+                    <div class="details-block" id="details5">
+                        <div class="card shadow-lg bg-light">
+                            <div class="card-body">
+                                <h4><b>DETAILS:</b></h4>
+                                <p><b>Collaboration and Teamwork:</b> Worked closely with the facility management team for Hyderabad branches, gaining insights into store sourcing processes.</p>
+                                <p><b>Technical Understanding:</b> Acquired hands-on knowledge of HVAC systems, including the functioning, maintenance, and operational principles of air conditioners. 
+                                    Analyzed system performance and identified key insights for efficient operation.</p>
+                                <p><b>Process Analysis:</b> Understood the end-to-end process of store sourcing, learning operational workflows and supply chain coordination, showcasing an ability to analyze and optimize processes effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
         </div>
-    </div> 
+    </div>
+
 </body>
 </html>
 
